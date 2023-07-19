@@ -1,4 +1,4 @@
-# Object Relations Code Challenge - Concerts
+# Object Relations Practice Challenge - Concerts
 
 For this assignment, we'll be working with a Concert domain.
 
@@ -27,7 +27,7 @@ Build out all of the methods listed in the deliverables. The methods are listed
 in a suggested order, but you can feel free to tackle the ones you think are
 easiest. Be careful: some of the later methods rely on earlier ones.
 
-**Remember!** This code challenge has `pytest` tests available to you. Run
+**Remember!** This challenge has `pytest` tests available to you. Run
 `pytest` at any time from within your virtual environment.
 
 We've provided you with another tool that you can use to test your code. To use
@@ -62,29 +62,29 @@ build out any helper methods if needed.
 
 #### Band
 
-- `Band __init__(name, hometown)`
+- Band `__init__(name, hometown)`
   - should initialize with a name (string) and hometown (string)
-- `Band property name()`
+- Band property `name`
   - should return the `Band`'s name
   - must be a string of greater than zero characters
-- `Band property hometown()`
+- Band property `hometown`
   - should return the `Band`'s hometown
   - must be a string of greater than zero characters
 
 #### Venue
 
-- `Venue __init__(title, city)`
+- Venue `__init__(title, city)`
   - should initialize with a title (string) and city (string)
-- `Venue property title()`
+- Venue property `title`
   - should return the title of the venue
   - must be a string of greater than zero characters
-- `Venue property city()`
+- Venue property `city`
   - should return the city of the venue
   - must be a string of greater than zero characters
 
 #### Concert
 
-- `Concert __init__(self, date, band, venue)`
+- Concert `__init__(self, date, band, venue)`
   - should initialize with a date (string), band, and venue
   - date must be a string of greater than zero characters
 
@@ -92,44 +92,44 @@ build out any helper methods if needed.
 
 #### Concert
 
-- `Concert band`
+- Concert `band`
   - should return the `Band` instance for this concert
-- `Concert venue`
+- Concert `venue`
   - should return the `Venue` instance for this concert
 
 #### Venue
 
-- `Venue concerts`
+- Venue `concerts`
   - returns a list of all the concerts for the venue
-- `Venue bands`
+- Venue `bands`
   - returns a list of all the bands for the venue
 
 #### Band
 
-- `Band property concerts`
+- Band property `concerts`
   - should return a list of all the concerts that the band has played in
 
 ### Aggregate Methods
 
 #### Concert
 
-- `Concert hometown_show()`
+- Concert `hometown_show`
   - returns `true` if the concert is in the band's hometown, `false` if it is not
-- `Concert introduction()`
+- Concert `introduction`
   - returns a string with the band's introduction for this concert
   - an introduction is in the form: `"Hello {insert city name here}!!!!!, we are {insert band name here} and we're from {insert hometown here}"`
 
 #### Band
 
-- `Band play_in_venue(venue, date)`
+- Band `play_in_venue(venue, date)`
   - takes a venue and date (as a string) as arguments, and creates a new concert for the band in that venue on that date
-- `Band all_introductions()`
+- Band `all_introductions`
   - returns a list of strings representing all the introductions for this band
   - each introduction is in the form `"Hello {insert city name here}!!!!!, we are {insert band name here} and we're from {insert hometown here}"`
 
 #### Venue
 
-- `Venue concert_on(date)`
+- Venue `concert_on(date)`
   - takes a date (string) as argument
   - finds and returns the first concert on that date at that venue
   - if there is no concert on that date at that venue, returns `None`
