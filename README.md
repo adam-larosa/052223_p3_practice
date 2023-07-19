@@ -1,3 +1,16 @@
+
+band -----< concert  =  a band has many concerts
+concert >----- band  =  a concert belongs to a band
+
+venue ----< concert  =  a venue has many concerts
+concert >---- venue  =  a concert belongs to a venue
+
+
+                band -----< concert >----- venue
+
+
+
+
 # Object Relations Practice Challenge - Concerts
 
 For this assignment, we'll be working with a Concert domain.
